@@ -1,0 +1,22 @@
+{
+  "name": "code-style",
+  "version": "1.0.0",
+  "description": "test code-style by precommit",
+  "main": "index.js",
+  "dependencies": {
+    "pre-commit": "^0.0.9"
+  },
+  "devDependencies": {
+    "pre-commit": "0.0.9"
+  },
+  "scripts": {
+    "jshint": "jshint -c .jshintrc app",
+    "jscs" : "jscs -c .jscsrc app"
+  },
+  "pre-commit" : [
+    "jscs",
+    "jshint"
+  ],
+  "author": "",
+  "license": "ISC"
+}
